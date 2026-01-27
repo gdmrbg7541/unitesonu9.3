@@ -7,13 +7,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
+        @font-face {
+            font-family: 'Arakom';
+            src: url('ARAKOM.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* --- Temel Sayfa Stilleri --- */
         :root {
             --accent-color: #007bff;
             --success-color: #28a745;
             --danger-color: #dc3545;
             --bg-light: #f8f9fa;
-            --font-arabic: 'Markazi Text', 'Tahoma', 'Arial', sans-serif;
+            
+            /* GÜNCELLEME: Font 'Arakom' olarak değiştirildi */
+            --font-arabic: 'Arakom', 'Markazi Text', 'Tahoma', 'Arial', sans-serif;
+            
+            /* Diğer değişkenler aynen kalıyor */
             --btn-bg: #f0f0f0;
             --btn-hover: #e0e0e0;
         }

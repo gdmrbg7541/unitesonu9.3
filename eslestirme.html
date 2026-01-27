@@ -8,6 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/drag-drop-touch@1.3.1/DragDropTouch.js"></script>
     
     <style>
+/* 1. ARAKOM.TTF dosyasını sisteme tanıtıyoruz */
+    @font-face {
+        font-family: 'Arakom';
+        src: url('ARAKOM.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* 2. Sayfadaki tüm önemli elementlere bu fontu zorluyoruz */
+    body, .buton, .drag-ghost {
+        font-family: 'Arakom', serif !important;
+    }
         @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600&display=swap');
         
         :root {

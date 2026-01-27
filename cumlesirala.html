@@ -7,14 +7,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- Temel Sayfa Stilleri --- */
-        :root {
-            --accent-color: #007bff;
-            --success-color: #28a745;
-            --danger-color: #dc3545;
-            --bg-light: #f8f9fa;
-            --font-arabic: 'Markazi Text', 'Noto Naskh Arabic', 'Tahoma', 'Arial', sans-serif;
-        }
+        /* 1. ARAKOM.TTF dosyasını sisteme tanıtıyoruz */
+    @font-face {
+        font-family: 'Arakom';
+        src: url('ARAKOM.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* 2. Değişkenleri ve Fontu Zorluyoruz */
+    :root {
+        --accent-color: #007bff;
+        --success-color: #28a745;
+        --danger-color: #dc3545;
+        --bg-light: #f8f9fa;
+        
+        /* Fontu 'Arakom' olarak güncelledik */
+        --font-arabic: 'Arakom', 'Markazi Text', 'Noto Naskh Arabic', 'Tahoma', 'Arial', sans-serif;
+    }
+
+    /* 3. ÖNEMLİ: Body ve TÜM BUTONLAR için fontu zorluyoruz */
+    body, button, .word-item {
+        font-family: var(--font-arabic) !important; /* !important ile baskın kıldık */
+    }
 
         body {
             font-family: var(--font-arabic);
